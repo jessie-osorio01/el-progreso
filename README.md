@@ -44,7 +44,7 @@ HTML, CSS y JavaScript · Claude (conceptualización y código) · herramienta d
 ## 6. Enlaces
 - Página web (GitHub Pages): https://jessie-osorio01.github.io/el-progreso/
 - Repositorio en GitHub: https://github.com/jessie-osorio01/el-progreso
-- Espacio de trabajo en Notion: https://app.notion.com/p/Minimercado-y-Distribuidora-El-Progreso-4180d62df4328012ab61cf6958792217
+- Espacio de trabajo en Notion: https://teal-ruby-707.notion.site/Minimercado-y-Distribuidora-El-Progreso-4180d62df4328012ab61cf6958792217
 
 ## 7. Autora
 - Jesica Lorena Osorio Fernández (proyecto individual)
