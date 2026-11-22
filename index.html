@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minimercado y Distribuidora El Progreso | Todo lo que necesitas está a la vuelta de tu casa</title>
+<meta name="description" content="Minimercado y Distribuidora El Progreso: comida campesina, abarrotes, lácteos, aseo, bebidas y licores. Pide por WhatsApp. Calle 156 #132B-11, Bogotá.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23166534'/%3E%3Ctext x='32' y='43' font-size='30' text-anchor='middle' fill='%23fff' font-family='Georgia' font-weight='bold'%3EEP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#166534; --green-2:#22863a; --green-soft:#e6f4ea;
+  --black:#111; --ink:#1d1d1b; --muted:#5b5b55;
+  --orange:#f2800f; --orange-soft:#fff0dc;
+  --cream:#fbf6ea; --card:#fff; --line:#e7dfcb;
+  --radius:18px; --shadow:0 8px 24px rgba(20,40,20,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:'Nunito',system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.55;-webkit-text-size-adjust:100%}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.15;color:var(--black)}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;cursor:pointer}
+.wrap{width:min(1120px,100% - 32px);margin-inline:auto}
+section{padding:64px 0}
+.eyebrow{display:inline-block;font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem;color:var(--orange);margin-bottom:6px}
+.sec-title{font-size:clamp(1.7rem,4vw,2.4rem);margin-bottom:8px}
+.sec-title em{font-style:normal;color:var(--green)}
+.sec-sub{color:var(--muted);max-width:60ch;margin-bottom:28px}
+
+/* Header */
+header.top{position:sticky;top:0;z-index:50;background:rgba(251,246,234,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:16px;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:'Fraunces',serif;font-weight:800;color:var(--black);line-height:1.05}
+.brand small{display:block;font-family:'Nunito';font-weight:700;color:var(--green);font-size:.68rem;letter-spacing:.06em;text-transform:uppercase}
+.logo{width:42px;height:42px;border-radius:12px;background:var(--green);display:grid;place-items:center;color:#fff;font-family:'Fraunces',serif;font-weight:800;font-size:1.1rem;overflow:hidden;flex:none}
+.logo img{width:100%;height:100%;object-fit:cover}
+nav.main{margin-left:auto;display:flex;gap:4px;align-items:center}
+nav.main a{text-decoration:none;font-weight:700;font-size:.92rem;padding:8px 12px;border-radius:10px}
+nav.main a:hover{background:var(--green-soft);color:var(--green)}
+.cart-btn{background:var(--black);color:#fff;border:0;border-radius:12px;padding:9px 14px;font-weight:800;display:flex;gap:8px;align-items:center}
+.cart-btn .count{background:var(--orange);color:#fff;border-radius:99px;min-width:22px;height:22px;display:grid;place-items:center;font-size:.8rem;padding:0 6px}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:10px;width:42px;height:42px;font-size:1.3rem;margin-left:auto}
+
+/* Hero */
+.hero{padding:56px 0 40px;text-align:center;background:
+  radial-gradient(900px 300px at 50% -10%,rgba(34,134,58,.16),transparent 70%),var(--cream)}
+.badge-open{display:inline-flex;gap:8px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:99px;padding:6px 14px;font-weight:800;font-size:.85rem;margin-bottom:18px}
+.dot{width:10px;height:10px;border-radius:50%;background:#aaa}
+.dot.on{background:#1fb14d;box-shadow:0 0 0 4px rgba(31,177,77,.2)}
+.dot.off{background:#d33}
+.hero h1{font-size:clamp(2.1rem,6.2vw,4rem);font-weight:800;max-width:18ch;margin:0 auto 16px;color:var(--black)}
+.hero h1 span{color:var(--green)}
+.hero .philosophy{font-size:clamp(1rem,2.2vw,1.2rem);max-width:60ch;margin:0 auto 26px;color:#3b3b36}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;border:2px solid transparent;border-radius:14px;padding:12px 20px;font-weight:800;transition:.15s;background:none}
+.btn.primary{background:var(--green);color:#fff}
+.btn.primary:hover{background:var(--green-2);transform:translateY(-2px)}
+.btn.orange{background:var(--orange);color:#fff}
+.btn.orange:hover{filter:brightness(1.07);transform:translateY(-2px)}
+.btn.ghost{border-color:var(--black);color:var(--black)}
+.btn.ghost:hover{background:var(--black);color:#fff}
+.btn.wa{background:#1fa855;color:#fff}
+.btn.sm{padding:8px 14px;font-size:.9rem;border-radius:11px}
+
+/* highlight cards */
+.highlights{padding-top:8px}
+.hl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.hl{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.hl .ico{font-size:2rem}
+.hl h3{margin:8px 0 6px;font-size:1.3rem}
+.hl p{color:var(--muted);font-size:.95rem;margin-bottom:12px}
+.hl.o{border-top:6px solid var(--orange)} .hl.g{border-top:6px solid var(--green)} .hl.b{border-top:6px solid var(--black)}
+.tag{display:inline-block;background:var(--orange-soft);color:#a24f00;font-weight:800;font-size:.75rem;padding:3px 10px;border-radius:99px}
+
+/* Aisle */
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;margin-bottom:20px;scrollbar-width:thin}
+.tab{flex:none;border:2px solid var(--line);background:#fff;border-radius:99px;padding:9px 16px;font-weight:800}
+.tab[aria-selected=true]{background:var(--green);border-color:var(--green);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow)}
+.thumb{aspect-ratio:4/3;background:linear-gradient(135deg,var(--green-soft),var(--orange-soft));display:grid;place-items:center;font-size:3.4rem;position:relative;overflow:hidden}
+.thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.card .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h3{font-size:1.05rem}
+.card .desc{font-size:.88rem;color:var(--muted);flex:1}
+.price{font-weight:800;font-size:1.25rem;color:var(--green)}
+.price small{font-weight:700;color:var(--muted);font-size:.78rem}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.chip{border:1.5px solid var(--green);background:#fff;color:var(--green);font-weight:800;border-radius:10px;padding:5px 9px;font-size:.78rem;line-height:1.2}
+.chip:hover{background:var(--green);color:#fff}
+.chip b{display:block;font-size:.72rem;opacity:.85}
+.adult{font-size:.74rem;color:#a02020;font-weight:800}
+.fav-star{position:absolute;top:10px;left:10px;background:var(--orange);color:#fff;font-weight:800;font-size:.72rem;border-radius:99px;padding:3px 10px;z-index:2}
+
+/* Promos */
+.promo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.promo{border-radius:var(--radius);padding:24px;color:#fff;background:linear-gradient(135deg,var(--green),#0d3d20)}
+.promo.alt{background:linear-gradient(135deg,var(--orange),#c35f00)}
+.promo.dark{background:linear-gradient(135deg,#222,#000)}
+.promo h3{color:#fff;font-size:1.3rem;margin-bottom:6px}
+.code{display:inline-block;margin-top:12px;border:2px dashed rgba(255,255,255,.8);padding:6px 14px;border-radius:10px;font-weight:800;letter-spacing:.1em;cursor:pointer;background:rgba(255,255,255,.12)}
+
+/* values & info */
+.values{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.value{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.value .ico{font-size:1.8rem}
+.value h3{font-size:1.1rem;margin:6px 0}
+.value p{color:var(--muted);font-size:.93rem}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
+.gallery figure{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:#fff}
+.gallery figcaption{padding:8px 12px;font-size:.85rem;font-weight:700}
+.gallery .thumb{aspect-ratio:1/1}
+.info-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:24px;align-items:stretch}
+.info-box{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.info-box ul{list-style:none;display:grid;gap:14px;margin-top:10px}
+.info-box li{display:flex;gap:12px}
+.info-box li .ico{font-size:1.4rem}
+.info-box strong{display:block}
+iframe.map{width:100%;height:100%;min-height:320px;border:0;border-radius:var(--radius);border:1px solid var(--line)}
+
+/* order */
+.order-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:24px;align-items:start}
+.panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+.panel h3{font-size:1.25rem;margin-bottom:12px}
+.panel+.panel{margin-top:20px}
+.cart-empty{color:var(--muted);text-align:center;padding:20px 0}
+.line{display:grid;grid-template-columns:1fr auto auto;gap:10px;align-items:center;padding:10px 0;border-bottom:1px dashed var(--line)}
+.line .n{font-weight:800;font-size:.95rem}
+.line .s{color:var(--muted);font-size:.8rem}
+.qty{display:flex;align-items:center;gap:6px}
+.qty button{width:30px;height:30px;border-radius:9px;border:1.5px solid var(--line);background:#fff;font-weight:800}
+.qty span{min-width:22px;text-align:center;font-weight:800}
+.rm{border:0;background:none;color:#b42318;font-weight:800}
+.totals{margin-top:14px;display:grid;gap:6px}
+.totals div{display:flex;justify-content:space-between}
+.totals .disc{color:var(--green);font-weight:800}
+.totals .grand{font-size:1.35rem;font-weight:800;border-top:2px solid var(--black);padding-top:8px;margin-top:4px}
+.coupon{display:flex;gap:8px;margin-top:14px}
+.field{display:grid;gap:5px;margin-bottom:12px}
+.field label{font-weight:800;font-size:.85rem}
+input,select,textarea{font:inherit;border:1.5px solid var(--line);border-radius:12px;padding:10px 12px;background:#fff;width:100%;color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:3px solid rgba(34,134,58,.25);border-color:var(--green)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:.88rem;margin-bottom:12px}
+.check input{width:auto;margin-top:4px}
+.msg{font-size:.85rem;margin-top:6px;font-weight:700}
+.msg.ok{color:var(--green)} .msg.err{color:#b42318}
+.btn-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.order-item{border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin-top:10px;font-size:.9rem;background:var(--cream)}
+.order-item b{color:var(--green)}
+.hello{background:var(--green-soft);border-radius:14px;padding:12px 14px;margin-bottom:12px;font-weight:700}
+
+/* footer */
+footer{background:var(--black);color:#e9e9e2;padding:48px 0 28px;margin-top:20px}
+footer h3{color:#fff;font-size:1.4rem}
+footer .thanks{color:var(--orange);font-weight:800;margin:6px 0 18px}
+.foot-links{display:flex;flex-wrap:wrap;gap:12px;margin:14px 0 22px}
+.foot-links a,.foot-links button{background:#222;border:1px solid #333;color:#fff;border-radius:12px;padding:9px 16px;font-weight:800;text-decoration:none}
+.foot-links a:hover,.foot-links button:hover{background:var(--green)}
+.copy{border-top:1px solid #333;padding-top:16px;font-size:.88rem;color:#b9b9b0}
+
+/* floating + modal + toast */
+.fab{position:fixed;right:16px;bottom:16px;z-index:60;display:none}
+dialog{border:0;border-radius:20px;max-width:min(640px,92vw);padding:26px;box-shadow:0 20px 60px rgba(0,0,0,.35)}
+dialog::backdrop{background:rgba(0,0,0,.55)}
+dialog h2{margin-bottom:10px}
+dialog ol,dialog ul{padding-left:20px;margin:8px 0 16px;display:grid;gap:6px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,40px);background:var(--black);color:#fff;padding:12px 18px;border-radius:12px;font-weight:700;opacity:0;pointer-events:none;transition:.25s;z-index:100;max-width:90vw;text-align:center}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+@media (max-width:860px){
+  .hl-grid,.info-grid,.order-grid{grid-template-columns:1fr}
+  nav.main{display:none;position:absolute;top:68px;left:0;right:0;background:var(--cream);border-bottom:1px solid var(--line);padding:10px 16px;flex-direction:column;align-items:stretch}
+  nav.main.open{display:flex}
+  .burger{display:block}
+  .cart-btn{margin-left:0}
+  .fab{display:block}
+  section{padding:48px 0}
+}
+@media (max-width:520px){.row2{grid-template-columns:1fr}.brand span.long{display:none}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#inicio" aria-label="El Progreso, inicio">
+      <span class="logo" id="logoBox"><img src="img/logo.png" alt="" onerror="this.remove();document.getElementById('logoBox').textContent='EP'"></span>
+      <span>El Progreso<small>Minimercado y Distribuidora</small></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="main" id="nav" aria-label="Principal">
+      <a href="#destacados">Destacados</a>
+      <a href="#pasillo">Pasillo virtual</a>
+      <a href="#favoritos">Favoritos</a>
+      <a href="#promociones">Promociones</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#pedido">Mi pedido</a>
+    </nav>
+    <button class="cart-btn" id="cartBtn" aria-label="Ir a mi pedido">🛒 <span class="count" id="cartCount">0</span></button>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div class="badge-open"><span class="dot" id="openDot"></span><span id="openText">Revisando horario…</span></div>
+    <h1>Todo lo que necesitas está <span>a la vuelta de tu casa</span></h1>
+    <p class="philosophy">Seleccionamos frutas frescas de las mejores cosechas campesinas, tienes disponibles tus diarios básicos y además con la mejor atención de barrio.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="#pasillo">🛍️ Explora productos</a>
+      <a class="btn ghost" href="#contacto">📍 Cómo llegar</a>
+      <a class="btn orange" href="#valores">⭐ Valores estrella</a>
+      <a class="btn ghost" href="#imagenes">🖼️ Imágenes</a>
+    </div>
+  </div>
+</section>
+
+<!-- DESTACADOS -->
+<section class="highlights" id="destacados">
+  <div class="wrap">
+    <div class="hl-grid">
+      <article class="hl g">
+        <div class="ico">🧺</div><h3>Comida campesina</h3>
+        <p>Frutas, verduras, huevos criollos y quesos que llegan directo de la cosecha a tu mesa.</p>
+        <button class="btn primary sm" data-goto-cat="campesina">Ver pasillo campesino</button>
+      </article>
+      <article class="hl o">
+        <div class="ico">🏷️</div><h3>Descuentos y promociones</h3>
+        <p>Usa el código <strong>PROGRESO10</strong> y recibe 10% de descuento en tu lista de mercado.</p>
+        <a class="btn orange sm" href="#promociones">Ver promociones</a>
+      </article>
+      <article class="hl b">
+        <div class="ico">🍺</div><h3>Licores</h3>
+        <p>Aguardiente y cerveza para tus reuniones. <span class="adult">Venta solo a mayores de 18 años.</span></p>
+        <button class="btn ghost sm" data-goto-cat="licores">Ver licores</button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PASILLO VIRTUAL -->
+<section id="pasillo">
+  <div class="wrap">
+    <span class="eyebrow">Pasillo virtual</span>
+    <h2 class="sec-title">Recorre el minimercado <em>por categoría</em></h2>
+    <p class="sec-sub">Elige un pasillo y agrega lo que necesites a tu lista de mercado. Precios aproximados en pesos colombianos (COP).</p>
+    <div class="tabs" id="tabs" role="tablist" aria-label="Categorías"></div>
+    <div class="grid" id="aisle" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- FAVORITOS -->
+<section id="favoritos" style="background:#fff;border-block:1px solid var(--line)">
+  <div class="wrap">
+    <span class="eyebrow">Los más pedidos</span>
+    <h2 class="sec-title">Productos <em>favoritos</em> del barrio</h2>
+    <p class="sec-sub">Toca una cantidad (x1, x2, x3…) y se agrega a tu pedido con el precio calculado.</p>
+    <div class="grid" id="favGrid"></div>
+  </div>
+</section>
+
+<!-- PROMOCIONES -->
+<section id="promociones">
+  <div class="wrap">
+    <span class="eyebrow">Promociones</span>
+    <h2 class="sec-title">Ahorra con <em>El Progreso</em></h2>
+    <p class="sec-sub">Toca el código para copiarlo y aplícalo en tu pedido.</p>
+    <div class="promo-grid" id="promoGrid"></div>
+  </div>
+</section>
+
+<!-- VALORES -->
+<section id="valores" style="background:#fff;border-block:1px solid var(--line)">
+  <div class="wrap">
+    <span class="eyebrow">Valores estrella</span>
+    <h2 class="sec-title">Lo que nos hace <em>tu minimercado</em></h2>
+    <div class="values">
+      <div class="value"><div class="ico">🍎</div><h3>Frescura campesina</h3><p>Seleccionamos frutas y verduras de las mejores cosechas.</p></div>
+      <div class="value"><div class="ico">🤝</div><h3>Atención de barrio</h3><p>Te conocemos, te escuchamos y te atendemos con respeto y cercanía.</p></div>
+      <div class="value"><div class="ico">🧾</div><h3>Precios justos</h3><p>Tus diarios básicos siempre disponibles a precios que cuidan tu bolsillo.</p></div>
+      <div class="value"><div class="ico">⏰</div><h3>Siempre cerca</h3><p>De lunes a sábado, desde muy temprano hasta bien entrada la noche.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- IMAGENES -->
+<section id="imagenes">
+  <div class="wrap">
+    <span class="eyebrow">Imágenes</span>
+    <h2 class="sec-title">Un vistazo a <em>El Progreso</em></h2>
+    <p class="sec-sub">Imágenes de la marca y de nuestros productos.</p>
+    <div class="gallery" id="gallery"></div>
+  </div>
+</section>
+
+<!-- PEDIDO -->
+<section id="pedido" style="background:#fff;border-block:1px solid var(--line)">
+  <div class="wrap">
+    <span class="eyebrow">Mi pedido</span>
+    <h2 class="sec-title">Arma tu <em>lista de mercado</em></h2>
+    <p class="sec-sub">Revisa tu carrito, aplica tu código y envía el pedido a nuestro WhatsApp con un solo toque.</p>
+    <div class="order-grid">
+      <div>
+        <div class="panel">
+          <h3>🛒 Tu carrito</h3>
+          <div id="cartLines"></div>
+          <div class="coupon">
+            <input id="couponInput" placeholder="Código de descuento" autocomplete="off" aria-label="Código de descuento">
+            <button class="btn primary sm" id="couponBtn" type="button">Aplicar</button>
+          </div>
+          <div class="msg" id="couponMsg"></div>
+          <div class="totals" id="totals"></div>
+        </div>
+        <div class="panel">
+          <h3>🧾 Pedidos registrados</h3>
+          <div id="orderLog"><p class="cart-empty">Aún no has registrado pedidos en este navegador.</p></div>
+        </div>
+      </div>
+      <div>
+        <div class="panel">
+          <h3>👤 Registro de cliente</h3>
+          <div id="accountBox"></div>
+        </div>
+        <form class="panel" id="orderForm" novalidate>
+          <h3>📝 Formulario de pedido</h3>
+          <div class="row2">
+            <div class="field"><label for="fName">Nombre *</label><input id="fName" required autocomplete="name"></div>
+            <div class="field"><label for="fPhone">Teléfono / WhatsApp *</label><input id="fPhone" required inputmode="tel" autocomplete="tel"></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label for="fMode">Entrega</label>
+              <select id="fMode"><option>Domicilio</option><option>Recoger en tienda</option></select></div>
+            <div class="field"><label for="fPay">Forma de pago</label>
+              <select id="fPay"><option>Efectivo</option><option>Transferencia</option><option>Datáfono</option></select></div>
+          </div>
+          <div class="field" id="addrField"><label for="fAddr">Dirección y barrio *</label><input id="fAddr" autocomplete="street-address"></div>
+          <div class="field"><label for="fExtra">Otros productos de tu lista de mercado</label>
+            <textarea id="fExtra" rows="3" placeholder="Ej: 2 libras de papa criolla, 1 pan tajado…"></textarea></div>
+          <div class="field"><label for="fNotes">Notas para el pedido</label><input id="fNotes" placeholder="Ej: tocar el timbre, llevar cambio de $50.000"></div>
+          <label class="check" id="ageRow" hidden><input type="checkbox" id="fAge"> <span>Confirmo que soy mayor de 18 años (pedido con licor).</span></label>
+          <div class="msg" id="formMsg"></div>
+          <div class="btn-row">
+            <button class="btn wa" type="button" id="sendWa">💬 Enviar por WhatsApp</button>
+            <button class="btn ghost" type="button" id="saveOrder">💾 Solo registrar</button>
+          </div>
+          <p class="msg" style="color:var(--muted);font-weight:600">El valor del domicilio se confirma por WhatsApp.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="wrap">
+    <span class="eyebrow">Contacto</span>
+    <h2 class="sec-title">Ven a visitarnos o <em>escríbenos</em></h2>
+    <div class="info-grid">
+      <div class="info-box">
+        <h3>Datos del minimercado</h3>
+        <ul>
+          <li><span class="ico">📍</span><div><strong>Dirección</strong>Calle 156 #132B-11, Bogotá</div></li>
+          <li><span class="ico">⏰</span><div><strong>Horarios de atención</strong>Lunes a sábado, 6:30 a. m. a 11:00 p. m.</div></li>
+          <li><span class="ico">📞</span><div><strong>Teléfono / WhatsApp</strong><a href="tel:+573023596524">302 359 6524</a></div></li>
+          <li><span class="ico">📸</span><div><strong>Instagram</strong><a href="https://www.instagram.com/Jessie.Osorio01/" target="_blank" rel="noopener">@Jessie.Osorio01</a></div></li>
+        </ul>
+        <div class="btn-row" style="margin-top:18px">
+          <a class="btn primary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Calle+156+132B+11+Bogota+Colombia">📍 Cómo llegar</a>
+          <a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/573023596524?text=Hola%20El%20Progreso%2C%20quiero%20hacer%20un%20pedido">💬 WhatsApp</a>
+        </div>
+      </div>
+      <iframe class="map" title="Mapa de El Progreso" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=Calle%20156%20%23132B-11%2C%20Bogot%C3%A1&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <h3>Minimercado y Distribuidora El Progreso</h3>
+    <p class="thanks">Gracias por preferirnos 💚</p>
+    <div class="foot-links">
+      <a href="https://www.instagram.com/Jessie.Osorio01/" target="_blank" rel="noopener">📸 Instagram</a>
+      <a href="https://wa.me/573023596524" target="_blank" rel="noopener">💬 WhatsApp</a>
+      <button type="button" id="termsBtn">📄 Términos</button>
+    </div>
+    <p class="copy">© <span id="year">2026</span> El Progreso · Minimercado y Distribuidora. Todos los derechos reservados. Calle 156 #132B-11, Bogotá.</p>
+  </div>
+</footer>
+
+<button class="btn orange fab" id="fab">🛒 Mi pedido · <span id="fabTotal">$0</span></button>
+
+<dialog id="termsDlg">
+  <h2>Términos y condiciones</h2>
+  <ul>
+    <li>Los precios mostrados son aproximados y pueden variar según disponibilidad y proveedor. El valor final se confirma por WhatsApp.</li>
+    <li>Los pedidos quedan sujetos a disponibilidad de inventario y a confirmación del minimercado.</li>
+    <li>El valor y los tiempos del domicilio se acuerdan al confirmar el pedido.</li>
+    <li>La venta de licores está prohibida a menores de 18 años. Exceso de alcohol es perjudicial para la salud.</li>
+    <li>El código PROGRESO10 aplica un 10% sobre el subtotal, un código por pedido, sujeto a cambios.</li>
+    <li>Esta versión guarda tu registro, carrito y pedidos únicamente en el navegador de tu dispositivo (LocalStorage).</li>
+  </ul>
+  <button class="btn primary" onclick="document.getElementById('termsDlg').close()">Entendido</button>
+</dialog>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+/* =========================================================
+   CONFIGURACIÓN (edita aquí tus datos y catálogo)
+   ========================================================= */
+const CONFIG = {
+  whatsapp: '573023596524',
+  store: 'Minimercado y Distribuidora El Progreso',
+  coupons: { PROGRESO10: { pct: 10, label: '10% de descuento' } },
+  hours: { open: '06:30', close: '23:00', days: [1,2,3,4,5,6] }   // 0=domingo … 6=sábado
+};
+
+const CATEGORIES = [
+  { id: 'campesina', name: 'Comida campesina', icon: '🧺' },
+  { id: 'abarrotes', name: 'Abarrotes', icon: '🍚' },
+  { id: 'lacteos',   name: 'Lácteos', icon: '🥛' },
+  { id: 'aseo',      name: 'Aseo', icon: '🧼' },
+  { id: 'bebidas',   name: 'Bebidas', icon: '🥤' },
+  { id: 'licores',   name: 'Licores', icon: '🍺' }
+];
+
+/* Precios aproximados en COP. 'fav: true' = aparece en Favoritos. Las fotos van en /img (opcional). */
+const PRODUCTS = [
+  { id:'canasta-frutas', cat:'campesina', name:'Canasta de frutas campesinas', desc:'Selección de frutas frescas de cosecha: mango, banano, mandarina y más.', price:28000, unit:'canasta', emoji:'🧺', img:'img/canasta-frutas.jpg', fav:true },
+  { id:'huevos-x30', cat:'campesina', name:'Huevos criollos x30', desc:'Cubeta de 30 huevos criollos de granja.', price:18000, unit:'cubeta', emoji:'🥚', img:'img/huevos.jpg', fav:true },
+  { id:'papa-criolla', cat:'campesina', name:'Papa criolla', desc:'Papa criolla amarilla por libra.', price:2800, unit:'libra', emoji:'🥔', img:'img/papa-criolla.jpg' },
+  { id:'platano', cat:'campesina', name:'Plátano hartón', desc:'Plátano hartón por unidad.', price:1800, unit:'unidad', emoji:'🍌', img:'img/platano.jpg' },
+  { id:'queso-campesino', cat:'campesina', name:'Queso campesino', desc:'Queso fresco campesino, 500 g.', price:14500, unit:'500 g', emoji:'🧀', img:'img/queso.jpg' },
+  { id:'panela', cat:'campesina', name:'Panela', desc:'Panela redonda tradicional.', price:5200, unit:'unidad', emoji:'🍯', img:'img/panela.jpg' },
+
+  { id:'arroz', cat:'abarrotes', name:'Arroz blanco 1 kg', desc:'Arroz blanco de grano largo.', price:4800, unit:'kg', emoji:'🍚', img:'img/arroz.jpg', fav:true },
+  { id:'lentejas', cat:'abarrotes', name:'Lentejas 500 g', desc:'Lentejas secas seleccionadas.', price:4200, unit:'500 g', emoji:'🫘', img:'img/lentejas.jpg' },
+  { id:'aceite', cat:'abarrotes', name:'Aceite vegetal 1 L', desc:'Aceite vegetal para cocinar.', price:13500, unit:'litro', emoji:'🫒', img:'img/aceite.jpg' },
+  { id:'azucar', cat:'abarrotes', name:'Azúcar 1 kg', desc:'Azúcar refinada.', price:4600, unit:'kg', emoji:'🍬', img:'img/azucar.jpg' },
+  { id:'cafe', cat:'abarrotes', name:'Café molido 250 g', desc:'Café colombiano molido.', price:9800, unit:'250 g', emoji:'☕', img:'img/cafe.jpg' },
+
+  { id:'leche', cat:'lacteos', name:'Leche entera 1 L', desc:'Leche entera en bolsa o caja.', price:4500, unit:'litro', emoji:'🥛', img:'img/leche.jpg', fav:true },
+  { id:'yogurt', cat:'lacteos', name:'Yogurt 1 L', desc:'Yogurt natural o de sabores.', price:8900, unit:'litro', emoji:'🥣', img:'img/yogurt.jpg' },
+  { id:'mantequilla', cat:'lacteos', name:'Mantequilla 250 g', desc:'Mantequilla con sal.', price:7800, unit:'250 g', emoji:'🧈', img:'img/mantequilla.jpg' },
+
+  { id:'detergente', cat:'aseo', name:'Detergente en polvo 1 kg', desc:'Para ropa de toda la familia.', price:11500, unit:'kg', emoji:'🧺', img:'img/detergente.jpg' },
+  { id:'jabon', cat:'aseo', name:'Jabón de barra x3', desc:'Jabón de barra multiusos.', price:6500, unit:'paquete', emoji:'🧼', img:'img/jabon.jpg' },
+  { id:'papel', cat:'aseo', name:'Papel higiénico x12', desc:'Doble hoja, paquete de 12 rollos.', price:19500, unit:'paquete', emoji:'🧻', img:'img/papel.jpg' },
+
+  { id:'gaseosa', cat:'bebidas', name:'Gaseosa 1.5 L', desc:'Gaseosa familiar bien fría.', price:5200, unit:'botella', emoji:'🥤', img:'img/gaseosa.jpg' },
+  { id:'jugo', cat:'bebidas', name:'Jugo de frutas 1 L', desc:'Jugo de frutas listo para tomar.', price:5800, unit:'litro', emoji:'🧃', img:'img/jugo.jpg' },
+  { id:'agua', cat:'bebidas', name:'Agua 600 ml', desc:'Agua natural.', price:2000, unit:'botella', emoji:'💧', img:'img/agua.jpg' },
+
+  { id:'aguardiente', cat:'licores', name:'Aguardiente 750 ml', desc:'Aguardiente tradicional, botella 750 ml.', price:52000, unit:'botella', emoji:'🥃', img:'img/aguardiente.jpg', fav:true, adult:true },
+  { id:'cerveza', cat:'licores', name:'Cerveza 330 ml', desc:'Cerveza nacional bien fría.', price:3200, unit:'unidad', emoji:'🍺', img:'img/cerveza.jpg', fav:true, adult:true },
+  { id:'cerveza-six', cat:'licores', name:'Cerveza six pack', desc:'Six pack de cerveza 330 ml.', price:19000, unit:'six pack', emoji:'🍻', img:'img/cerveza-six.jpg', adult:true }
+];
+
+const PROMOS = [
+  { cls:'', title:'10% con PROGRESO10', text:'Aplica el código en tu pedido y recibe 10% de descuento sobre el subtotal.', code:'PROGRESO10' },
+  { cls:'alt', title:'Canasta campesina', text:'Frutas de cosecha frescas para toda la semana. Pregunta por nuestras ofertas del día.', code:null },
+  { cls:'dark', title:'Para tus reuniones', text:'Licores y bebidas en un solo pedido. Solo mayores de 18 años.', code:null }
+];
+
+const GALLERY = [
+  { img:'img/hero.jpg', emoji:'🏪', cap:'Fachada El Progreso' },
+  { img:'img/canasta-frutas.jpg', emoji:'🧺', cap:'Canasta de frutas campesinas' },
+  { img:'img/huevos.jpg', emoji:'🥚', cap:'Huevos criollos' },
+  { img:'img/leche.jpg', emoji:'🥛', cap:'Lácteos frescos' },
+  { img:'img/arroz.jpg', emoji:'🍚', cap:'Abarrotes del día a día' },
+  { img:'img/moodboard.jpg', emoji:'🎨', cap:'Moodboard de la marca' }
+];
+
+/* =========================================================
+   CAPA DE ALMACENAMIENTO  (hoy: LocalStorage)
+   Para migrar a Firebase/Python solo se reemplazan estas funciones
+   por llamadas a la API (ver docs/FIREBASE.md). El resto del código no cambia.
+   ========================================================= */
+const Store = {
+  _get(k, d){ try{ const v = localStorage.getItem('progreso_'+k); return v ? JSON.parse(v) : d; }catch(e){ return d; } },
+  _set(k, v){ try{ localStorage.setItem('progreso_'+k, JSON.stringify(v)); }catch(e){} },
+  getCart(){ return this._get('cart', {}); },
+  saveCart(c){ this._set('cart', c); },
+  getCoupon(){ return this._get('coupon', ''); },
+  saveCoupon(c){ this._set('coupon', c); },
+  getUser(){ return this._get('user', null); },
+  saveUser(u){ this._set('user', u); },          // Firebase: setDoc(doc(db,'clientes',uid), u)
+  getOrders(){ return this._get('orders', []); },
+  saveOrder(o){ const a = this.getOrders(); a.unshift(o); this._set('orders', a.slice(0,30)); } // Firebase: addDoc(collection(db,'pedidos'), o)
+};
+
+/* ============== Utilidades ============== */
+const $ = (s, r=document) => r.querySelector(s);
+const fmt = n => new Intl.NumberFormat('es-CO',{style:'currency',currency:'COP',maximumFractionDigits:0}).format(n);
+const byId = id => PRODUCTS.find(p => p.id === id);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let toastT;
+function toast(t){ const el=$('#toast'); el.textContent=t; el.classList.add('show'); clearTimeout(toastT); toastT=setTimeout(()=>el.classList.remove('show'),2400); }
+
+/* ============== Estado ============== */
+let cart = Store.getCart();
+let couponCode = Store.getCoupon();
+let currentCat = 'campesina';
+
+/* ============== Horario ============== */
+function updateOpen(){
+  const now = new Date(new Date().toLocaleString('en-US',{timeZone:'America/Bogota'}));
+  const mins = now.getHours()*60 + now.getMinutes();
+  const [oh,om] = CONFIG.hours.open.split(':').map(Number), [ch,cm] = CONFIG.hours.close.split(':').map(Number);
+  const open = CONFIG.hours.days.includes(now.getDay()) && mins >= oh*60+om && mins < ch*60+cm;
+  $('#openDot').className = 'dot ' + (open ? 'on' : 'off');
+  $('#openText').textContent = open ? 'Abierto ahora · hasta las 11:00 p. m.' : 'Cerrado ahora · Lun–Sáb 6:30 a. m. – 11:00 p. m.';
+}
+
+/* ============== Catálogo ============== */
+function thumb(p){
+  return `<div class="thumb"><span aria-hidden="true">${p.emoji}</span><img src="${p.img}" alt="${esc(p.name)}" loading="lazy" onerror="this.remove()"></div>`;
+}
+function productCard(p, withStar){
+  const chips = [1,2,3,5].map(q => `<button class="chip" data-add="${p.id}" data-q="${q}" aria-label="Agregar ${q} de ${esc(p.name)}">x${q}<b>${fmt(p.price*q)}</b></button>`).join('');
+  return `<article class="card">
+    <div style="position:relative">${p.fav && withStar ? '<span class="fav-star">⭐ Favorito</span>' : ''}${thumb(p)}</div>
+    <div class="body">
+      <h3>${esc(p.name)}</h3>
+      <p class="desc">${esc(p.desc)}</p>
+      ${p.adult ? '<span class="adult">Solo mayores de 18 años</span>' : ''}
+      <div class="price">${fmt(p.price)} <small>/ ${esc(p.unit)}</small></div>
+      <div class="chips">${chips}</div>
+    </div></article>`;
+}
+function renderTabs(){
+  $('#tabs').innerHTML = CATEGORIES.map(c => `<button class="tab" role="tab" aria-selected="${c.id===currentCat}" data-cat="${c.id}">${c.icon} ${c.name}</button>`).join('');
+}
+function renderAisle(){
+  renderTabs();
+  $('#aisle').innerHTML = PRODUCTS.filter(p => p.cat === currentCat).map(p => productCard(p,false)).join('');
+}
+function renderFavs(){ $('#favGrid').innerHTML = PRODUCTS.filter(p => p.fav).map(p => productCard(p,true)).join(''); }
+function renderPromos(){
+  $('#promoGrid').innerHTML = PROMOS.map(p => `<article class="promo ${p.cls}"><h3>${esc(p.title)}</h3><p>${esc(p.text)}</p>${p.code ? `<span class="code" data-copy="${p.code}" role="button" tabindex="0">${p.code}</span>` : ''}</article>`).join('');
+}
+function renderGallery(){
+  $('#gallery').innerHTML = GALLERY.map(g => `<figure><div class="thumb"><span aria-hidden="true">${g.emoji}</span><img src="${g.img}" alt="${esc(g.cap)}" loading="lazy" onerror="this.remove()"></div><figcaption>${esc(g.cap)}</figcaption></figure>`).join('');
+}
+
+/* ============== Carrito ============== */
+function totals(){
+  let subtotal = 0;
+  for(const [id,q] of Object.entries(cart)){ const p = byId(id); if(p) subtotal += p.price*q; }
+  const c = CONFIG.coupons[couponCode];
+  const discount = c ? Math.round(subtotal * c.pct / 100) : 0;
+  return { subtotal, discount, total: subtotal - discount, pct: c ? c.pct : 0 };
+}
+function cartCount(){ return Object.values(cart).reduce((a,b)=>a+b,0); }
+function hasAdult(){ return Object.keys(cart).some(id => byId(id)?.adult); }
+
+function addToCart(id, q){ cart[id] = (cart[id]||0) + q; Store.saveCart(cart); renderCart(); toast(`+${q} ${byId(id).name}`); }
+function setQty(id, q){ if(q<=0) delete cart[id]; else cart[id]=q; Store.saveCart(cart); renderCart(); }
+
+function renderCart(){
+  const ids = Object.keys(cart).filter(id => byId(id));
+  $('#cartLines').innerHTML = ids.length ? ids.map(id => { const p = byId(id), q = cart[id]; return `
+    <div class="line">
+      <div><div class="n">${esc(p.name)}</div><div class="s">${fmt(p.price)} c/u</div></div>
+      <div class="qty"><button data-dec="${id}" aria-label="Quitar uno">−</button><span>${q}</span><button data-inc="${id}" aria-label="Agregar uno">+</button></div>
+      <div><strong>${fmt(p.price*q)}</strong><br><button class="rm" data-rm="${id}">Quitar</button></div>
+    </div>`; }).join('') : '<p class="cart-empty">Tu carrito está vacío. Agrega productos desde el pasillo virtual o favoritos 🛍️</p>';
+  const t = totals();
+  $('#totals').innerHTML = ids.length ? `
+    <div><span>Subtotal</span><span>${fmt(t.subtotal)}</span></div>
+    ${t.discount ? `<div class="disc"><span>Descuento ${esc(couponCode)} (${t.pct}%)</span><span>− ${fmt(t.discount)}</span></div>` : ''}
+    <div class="grand"><span>Total</span><span>${fmt(t.total)}</span></div>` : '';
+  $('#cartCount').textContent = cartCount();
+  $('#fabTotal').textContent = fmt(t.total);
+  $('#ageRow').hidden = !hasAdult();
+  $('#couponInput').value = couponCode;
+}
+function applyCoupon(){
+  const code = $('#couponInput').value.trim().toUpperCase(), m = $('#couponMsg');
+  if(!code){ couponCode=''; Store.saveCoupon(''); m.textContent=''; renderCart(); return; }
+  if(CONFIG.coupons[code]){ couponCode=code; Store.saveCoupon(code); m.className='msg ok'; m.textContent=`✔ Código aplicado: ${CONFIG.coupons[code].label}`; }
+  else { couponCode=''; Store.saveCoupon(''); m.className='msg err'; m.textContent='Código no válido. Prueba con PROGRESO10.'; }
+  renderCart();
+}
+
+/* ============== Registro de cliente ============== */
+function renderAccount(){
+  const u = Store.getUser(), box = $('#accountBox');
+  if(u){
+    box.innerHTML = `<div class="hello">👋 ¡Hola, ${esc(u.name)}! Tus datos se cargan solos en el pedido.</div>
+      <div class="btn-row"><button class="btn ghost sm" id="editUser" type="button">Editar datos</button><button class="btn ghost sm" id="logoutUser" type="button">Cerrar registro</button></div>`;
+    $('#fName').value = u.name; $('#fPhone').value = u.phone; $('#fAddr').value = u.address || '';
+  } else {
+    box.innerHTML = `<form id="regForm" novalidate>
+      <div class="row2">
+        <div class="field"><label for="rName">Nombre *</label><input id="rName" autocomplete="name"></div>
+        <div class="field"><label for="rPhone">Teléfono *</label><input id="rPhone" inputmode="tel" autocomplete="tel"></div>
+      </div>
+      <div class="field"><label for="rMail">Correo (opcional)</label><input id="rMail" type="email" autocomplete="email"></div>
+      <div class="field"><label for="rAddr">Dirección y barrio</label><input id="rAddr" autocomplete="street-address"></div>
+      <div class="msg" id="regMsg"></div>
+      <button class="btn primary sm" type="submit">Registrarme</button></form>`;
+    $('#regForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const name=$('#rName').value.trim(), phone=$('#rPhone').value.trim();
+      if(name.length<2 || phone.replace(/\D/g,'').length<7){ const m=$('#regMsg'); m.className='msg err'; m.textContent='Escribe tu nombre y un teléfono válido.'; return; }
+      Store.saveUser({ name, phone, email:$('#rMail').value.trim(), address:$('#rAddr').value.trim(), createdAt:new Date().toISOString() });
+      toast('¡Registro guardado!'); renderAccount();
+    });
+  }
+}
+
+/* ============== Pedido ============== */
+function readForm(){
+  const mode = $('#fMode').value;
+  return { name:$('#fName').value.trim(), phone:$('#fPhone').value.trim(), mode, address:$('#fAddr').value.trim(),
+    pay:$('#fPay').value, extra:$('#fExtra').value.trim(), notes:$('#fNotes').value.trim() };
+}
+function validate(f){
+  const m = $('#formMsg'); m.className='msg err';
+  if(!Object.keys(cart).length && !f.extra){ m.textContent='Agrega productos o escribe tu lista de mercado.'; return false; }
+  if(f.name.length<2){ m.textContent='Escribe tu nombre.'; return false; }
+  if(f.phone.replace(/\D/g,'').length<7){ m.textContent='Escribe un teléfono válido.'; return false; }
+  if(f.mode==='Domicilio' && f.address.length<5){ m.textContent='Escribe tu dirección y barrio para el domicilio.'; return false; }
+  if(hasAdult() && !$('#fAge').checked){ m.textContent='Confirma que eres mayor de 18 años para pedir licores.'; return false; }
+  m.textContent=''; return true;
+}
+function buildOrder(f){
+  const t = totals();
+  const items = Object.entries(cart).filter(([id])=>byId(id)).map(([id,q]) => ({ id, name:byId(id).name, qty:q, unit:byId(id).price, sub:byId(id).price*q }));
+  return { id:'EP-'+Date.now().toString(36).toUpperCase(), date:new Date().toISOString(), customer:f, items, coupon:couponCode||null, ...t };
+}
+function buildMessage(o){
+  const L = [];
+  L.push(`🛒 *Pedido – ${CONFIG.store}*`, `Código: ${o.id}`, '', `👤 ${o.customer.name}`, `📞 ${o.customer.phone}`,
+    `🚚 ${o.customer.mode}${o.customer.mode==='Domicilio' ? ' – '+o.customer.address : ''}`, `💳 Pago: ${o.customer.pay}`, '', '*Lista de mercado:*');
+  o.items.forEach(i => L.push(`• ${i.qty} x ${i.name} — ${fmt(i.sub)}`));
+  if(o.customer.extra) L.push('', '*Otros productos:*', o.customer.extra);
+  L.push('', `Subtotal: ${fmt(o.subtotal)}`);
+  if(o.discount) L.push(`Descuento ${o.coupon} (${o.pct}%): -${fmt(o.discount)}`);
+  L.push(`*Total: ${fmt(o.total)}*`);
+  if(o.customer.notes) L.push('', `📝 Notas: ${o.customer.notes}`);
+  L.push('', '(Precios aproximados; el domicilio se confirma por WhatsApp)');
+  return L.join('\n');
+}
+function renderOrders(){
+  const a = Store.getOrders(), box = $('#orderLog');
+  if(!a.length){ box.innerHTML='<p class="cart-empty">Aún no has registrado pedidos en este navegador.</p>'; return; }
+  box.innerHTML = a.map(o => `<div class="order-item"><b>${esc(o.id)}</b> · ${new Date(o.date).toLocaleString('es-CO',{dateStyle:'medium',timeStyle:'short'})}<br>
+    ${o.items.length} producto(s)${o.customer.extra ? ' + lista adicional' : ''} · <b>${fmt(o.total)}</b>${o.coupon ? ' · cupón '+esc(o.coupon) : ''} · ${esc(o.customer.mode)}</div>`).join('');
+}
+function finishOrder(sendWa){
+  const f = readForm(); if(!validate(f)) return;
+  const o = buildOrder(f);
+  Store.saveOrder(o);
+  if(sendWa) window.open(`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(buildMessage(o))}`, '_blank', 'noopener');
+  cart = {}; Store.saveCart(cart); couponCode=''; Store.saveCoupon(''); $('#couponMsg').textContent='';
+  $('#fExtra').value=''; $('#fNotes').value=''; $('#fAge').checked=false;
+  renderCart(); renderOrders();
+  const m=$('#formMsg'); m.className='msg ok'; m.textContent = sendWa ? '✔ Pedido registrado y enviado a WhatsApp.' : '✔ Pedido registrado en pantalla.';
+  toast('Pedido '+o.id+' registrado');
+}
+
+/* ============== Eventos ============== */
+document.addEventListener('click', e => {
+  const t = e.target.closest('[data-add],[data-cat],[data-goto-cat],[data-inc],[data-dec],[data-rm],[data-copy]');
+  if(!t) return;
+  if(t.dataset.add) addToCart(t.dataset.add, +t.dataset.q);
+  else if(t.dataset.cat){ currentCat=t.dataset.cat; renderAisle(); }
+  else if(t.dataset.gotoCat){ currentCat=t.dataset.gotoCat; renderAisle(); $('#pasillo').scrollIntoView(); }
+  else if(t.dataset.inc) setQty(t.dataset.inc, cart[t.dataset.inc]+1);
+  else if(t.dataset.dec) setQty(t.dataset.dec, cart[t.dataset.dec]-1);
+  else if(t.dataset.rm) setQty(t.dataset.rm, 0);
+  else if(t.dataset.copy){
+    const c=t.dataset.copy; $('#couponInput').value=c; applyCoupon();
+    (navigator.clipboard?.writeText(c) || Promise.resolve()).catch(()=>{}); toast(`Código ${c} copiado y aplicado`);
+  }
+});
+document.addEventListener('click', e => {
+  if(e.target.id==='editUser'){ Store.saveUser(null); renderAccount(); }
+  if(e.target.id==='logoutUser'){ Store.saveUser(null); $('#fName').value=$('#fPhone').value=$('#fAddr').value=''; renderAccount(); }
+});
+$('#couponBtn').addEventListener('click', applyCoupon);
+$('#couponInput').addEventListener('keydown', e => { if(e.key==='Enter'){ e.preventDefault(); applyCoupon(); }});
+$('#fMode').addEventListener('change', () => { $('#addrField').hidden = $('#fMode').value !== 'Domicilio'; });
+$('#sendWa').addEventListener('click', () => finishOrder(true));
+$('#saveOrder').addEventListener('click', () => finishOrder(false));
+$('#orderForm').addEventListener('submit', e => e.preventDefault());
+const goOrder = () => $('#pedido').scrollIntoView();
+$('#cartBtn').addEventListener('click', goOrder); $('#fab').addEventListener('click', goOrder);
+$('#termsBtn').addEventListener('click', () => $('#termsDlg').showModal());
+$('#burger').addEventListener('click', () => { const n=$('#nav'); const o=n.classList.toggle('open'); $('#burger').setAttribute('aria-expanded', o); });
+$('#nav').addEventListener('click', e => { if(e.target.tagName==='A'){ $('#nav').classList.remove('open'); $('#burger').setAttribute('aria-expanded', false);} });
+
+/* ============== Inicio ============== */
+$('#year').textContent = new Date().getFullYear();
+renderAisle(); renderFavs(); renderPromos(); renderGallery(); renderAccount(); renderCart(); renderOrders(); updateOpen();
+setInterval(updateOpen, 60000);
+</script>
+</body>
+</html>
